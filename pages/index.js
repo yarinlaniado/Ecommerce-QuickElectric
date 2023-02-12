@@ -1,7 +1,7 @@
 import { Inter } from "@next/font/google";
 import { useState } from "react";
 import Layout from "../components/Layout";
-import Product from "../components/product";
+import Product from "../components/Product";
 import { initmongoose } from "../lib/mongoose";
 import { findAllProducts } from "./api/products";
 

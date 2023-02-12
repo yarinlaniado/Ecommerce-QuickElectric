@@ -2,7 +2,6 @@ import { PayPalButtons } from "@paypal/react-paypal-js";
 import { useRouter } from "next/router";
 import { useContext } from "react";
 import { ProductContext } from "../components/ProductContext";
-import { initmongoose } from "../lib/mongoose";
 
 /* Create after payment a success page! */
 

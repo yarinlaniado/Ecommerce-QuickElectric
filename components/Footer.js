@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useContext } from "react";
 import { ProductContext } from "./ProductContext";
-
+d;
 const Footer = () => {
   const router = useRouter();
   const path = router.pathname;
