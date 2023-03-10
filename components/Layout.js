@@ -6,6 +6,7 @@ export default function Layout({ children }) {
   const { success, setSuccess } = useContext(ProductContext);
   return (
     <div className="lg:flex flex-col justify-center items-center space">
+      <title>QuickElectric</title>
       {success && (
         <div
           className=" bg-emerald-100 border border-emerald-400 text-emerald-700 px-10 py-3 rounded relative"
