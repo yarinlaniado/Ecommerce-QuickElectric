@@ -79,10 +79,10 @@ export default function CheckoutPage() {
             if (amount === 0) return;
             return (
               <div
-                className="flex bg-gradient-to-r from-emerald-300 to-purple-300 justify-center mb-5 border rounded-xl p-3 w-1/2"
+                className="flex justify-between bg-gradient-to-r from-emerald-300 to-purple-300 md:justify-center mb-5 border rounded-xl p-3 lg:w-1/2"
                 key={productInfo._id}
               >
-                <div className="bg-gray-200 p-3 rounded-xl shrink-0">
+                <div className="bg-gray-200 p-3 rounded-xl shrink-0 h-1/2">
                   <Image
                     className="w-24"
                     src={productInfo.picture}
@@ -138,7 +138,7 @@ export default function CheckoutPage() {
         >
           {selectedProducts.length === 0 ? "Add items to cart" : "clear"}
         </button>
-        <div className="mt-4 w-1/2 p-6 rounded-xl border-green-300 border">
+        <div className="mt-4 md:w-1/2  p-6 rounded-xl border-green-300 border">
           {isEmpty() && (
             <p
               className="font-bold text-emerald-500 text-center mb-5"
