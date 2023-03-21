@@ -5,8 +5,16 @@ import { ProductContext } from "./ProductContext";
 export default function Layout({ children }) {
   const { success, setSuccess } = useContext(ProductContext);
   return (
-    <div className="lg:flex flex-col justify-center items-center space">
+    <div className="lg:flex flex-col justify-center items-center space mt-1">
       <title>QuickElectric</title>
+      <h1 className=" mb-4  font-extrabold text-emerald-400  text-5xl lg:text-6xl text-center ">
+        <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400 ">
+          QuickElectric
+        </span>
+      </h1>
+      <h3 className="mb-4 text-2xl font-extrabold text-emerald-400  md:text-4xl lg:text-5xl text-center">
+        We are here for you.
+      </h3>
       {success && (
         <div
           className=" bg-emerald-100 border border-emerald-400 text-emerald-700 px-10 py-3 rounded relative"

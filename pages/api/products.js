@@ -9,7 +9,7 @@ const handle = async (req, res) => {
   const { ids } = req.query;
   if (ids) {
     const idsArray = ids.split(",");
-    res.json(await Product.find({ _id: { $in: idsArray } }).exec());
+    res.json(await Product.find({ _id: { $in: idsArray } }).exec()).status(200);
   } else res.json({});
 };
 

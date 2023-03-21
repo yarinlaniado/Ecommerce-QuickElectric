@@ -5,8 +5,6 @@ import Product from "../components/Product";
 import { initmongoose } from "../lib/mongoose";
 import { findAllProducts } from "./api/products";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export default function Home({ products }) {
   const [phrase, setPhrase] = useState("");
 
@@ -19,14 +17,6 @@ export default function Home({ products }) {
 
   return (
     <Layout>
-      <h1 className="mb-4 text-3xl font-extrabold text-emerald-400  md:text-5xl lg:text-6xl text-center">
-        <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
-          QuickElectric
-        </span>{" "}
-      </h1>
-      <h3 className="mb-4 text-2xl font-extrabold text-emerald-400  md:text-4xl lg:text-5xl text-center">
-        We are here for you.
-      </h3>
       <input
         type="text"
         placeholder="Search for products..."
